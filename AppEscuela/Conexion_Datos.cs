@@ -33,7 +33,7 @@ namespace CapaDatos
     public class PersonaDatos
     {
         //cadena de conexion
-        public string conexion = "Server=.;Database=Escuela;Integrated Security=true";
+        public string conexion = "Server=.;Database=Escuela;Integrated Security=true" + ";TrustServerCertificate=True";
 
         //Metodo para buscar una persona por su id
         public Persona ObtenerPersonaPorId(int idBusqueda)

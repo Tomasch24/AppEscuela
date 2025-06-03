@@ -120,6 +120,7 @@
             txtExtra.Name = "txtExtra";
             txtExtra.Size = new Size(150, 31);
             txtExtra.TabIndex = 9;
+            txtExtra.TextChanged += txtExtra_TextChanged;
             // 
             // btnBuscarx
             // 

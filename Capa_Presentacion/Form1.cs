@@ -23,7 +23,7 @@ namespace Capa_Presentacion
 
             int Id;
 
-            if(!int.TryParse(txtID.Text, out Id))
+            if (!int.TryParse(txtID.Text, out Id))
             {
                 MessageBox.Show("Ingrese un codigo Valido");
                 return;
@@ -54,12 +54,12 @@ namespace Capa_Presentacion
                     MessageBox.Show("Persona no encontrada");
                     LimpiarCampos();
                 }
-               
+
             }
 
         }
 
-        private void LimpiarCampos() 
+        private void LimpiarCampos()
         {
             txtName.Text = "";
             txtApellido.Text = "";
@@ -69,6 +69,9 @@ namespace Capa_Presentacion
 
         }
 
+        private void txtExtra_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
